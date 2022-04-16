@@ -54,14 +54,13 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.ViewHo
             super(itemView);
             questionText = (TextView) itemView.findViewById(R.id.questionText);
             rvOptions = (RecyclerView) itemView.findViewById(R.id.options);
-
-//            OptionAdapter optionAdapter = new OptionAdapter(questionList.get(0).getOptions());
+            OptionAdapter optionAdapter = new OptionAdapter(questionList.get(0).getOptions());
 //
-//            rvOptions.setAdapter(optionAdapter);
+            rvOptions.setAdapter(optionAdapter);
 //
 //            questionText.setText(questionList.get(0).getName());
 //
-//            rvOptions.setLayoutManager(new LinearLayoutManager(this));
+            rvOptions.setLayoutManager(new LinearLayoutManager(itemView.getContext()));
         }
 
         @Override

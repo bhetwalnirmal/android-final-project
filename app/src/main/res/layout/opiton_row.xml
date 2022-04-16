@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="5dp"
         android:weightSum="1"
         >
 
@@ -18,20 +19,20 @@
             android:id="@+id/answer"
             android:text="Option A"
             android:layout_gravity="center"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.12"
             />
 
         <ImageView
+            android:id="@+id/checkmark"
+            android:visibility="invisible"
             android:layout_margin="10dp"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.88"
             android:layout_gravity="center"
-            android:background="@drawable/round_icon"
+            android:background="@drawable/baseline_check_24"
             />
     </LinearLayout>
 

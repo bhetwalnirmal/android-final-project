@@ -3,10 +3,12 @@ package com.nirmalbhetwal.androidfinalproject;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
+import android.media.Image;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -48,11 +50,13 @@ public class OptionAdapter extends RecyclerView.Adapter<OptionAdapter.ViewHolder
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView option;
+        private ImageView checkMark;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             option = (TextView) itemView.findViewById(R.id.answer);
+            checkMark = (ImageView) itemView.findViewById(R.id.checkmark);
 
             itemView.setOnClickListener(this);
         }
@@ -63,22 +67,19 @@ public class OptionAdapter extends RecyclerView.Adapter<OptionAdapter.ViewHolder
 
             if (position != RecyclerView.NO_POSITION) {
                 Option clickedOption = optionList.get(position);
-
-                updateOption(clickedOption, view, position);
+                Log.d("sdf", "" + clickedOption.isCorrectAnswer());
+                updateOption(clickedOption, view, checkMark);
             }
         }
     }
 
-    void updateOption (Option option, View view, int position) {
-        GradientDrawable shape =  new GradientDrawable();
-        shape.setCornerRadius( 50 );
-
-        if (option.isCorrectAnswer() == true) {
-            shape.setColor(Color.GREEN);
+    void updateOption (Option option, View view, ImageView checkMark) {
+        if (option.isCorrectAnswer()) {
+            checkMark.setBackgroundResource(R.drawable.baseline_check_24);
         } else {
-            shape.setColor(Color.RED);
+            checkMark.setBackgroundResource(R.drawable.baseline_clear_24);
         }
 
-        view.setBackground(shape);
+        checkMark.setVisibility(View.VISIBLE);
     }
 }

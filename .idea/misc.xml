@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/baseline_check_24.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable-v24/baseline_clear_24.xml" value="0.121" />
         <entry key="app/src/main/res/drawable-v24/custom_background.xml" value="0.127" />
         <entry key="app/src/main/res/drawable-v24/round-icon.xml" value="0.2475" />
         <entry key="app/src/main/res/drawable-v24/round_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/round-icon.xml" value="0.121" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/custom_layout.xml" value="0.10989583333333333" />
-        <entry key="app/src/main/res/layout/opiton_row.xml" value="0.18458781362007168" />
+        <entry key="app/src/main/res/layout/opiton_row.xml" value="0.5749389648437501" />
         <entry key="app/src/main/res/layout/question_row.xml" value="0.284698486328125" />
       </map>
     </option>
