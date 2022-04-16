@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+    <corners
+        android:radius="50dp" />
+    <size
+        android:width="10dp"
+        android:height="10dp"
+        />
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/black" />
+    <CheckBox
+        android:id="@+id/item_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:checked="true"
+        android:scaleX="0.6"
+        android:scaleY="0.6" />
+</shape>

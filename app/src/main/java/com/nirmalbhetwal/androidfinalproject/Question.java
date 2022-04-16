@@ -1,12 +1,13 @@
 package com.nirmalbhetwal.androidfinalproject;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Question {
     private String name;
-    private Option[] options;
+    private List<Option> options;
 
-    public Question(String name, Option[] options) {
+    public Question(String name, List<Option> options) {
         this.name = name;
         this.options = options;
     }
@@ -19,11 +20,11 @@ public class Question {
         this.name = name;
     }
 
-    public Option[] getOptions() {
+    public List<Option> getOptions() {
         return options;
     }
 
-    public void setOptions(Option[] options) {
+    public void setOptions(List<Option> options) {
         this.options = options;
     }
 
