@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         rvQuestion = (RecyclerView) findViewById(R.id.rvQuestion);
         Collections.shuffle(questionList);
-        QuestionAdapter questionAdapter = new QuestionAdapter(questionList.stream().limit(5).collect(Collectors.toList()));
+        QuestionAdapter questionAdapter = new QuestionAdapter(questionList.stream().limit(8).collect(Collectors.toList()));
         rvQuestion.setAdapter(questionAdapter);
         rvQuestion.setLayoutManager(new LinearLayoutManager(this));
     }
